@@ -1,7 +1,12 @@
-<!DOCTYPE html><html lang=en><head><meta http-equiv=Content-Type content="text/html; charset=UTF-8"><meta name=viewport content="width=device-width,initial-scale=1"><link rel="stylesheet" href="../css/slidestyles.css" type="text/css" media="screen" charset="utf-8">
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+        <meta name=viewport content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="./css/slidestyles.css" type="text/css" media="screen" charset="utf-8">
 
-<!-- #ToDo: Change Title for the presentation -->
-<title>Presentation Title</title>
+    <!-- #ToDo: Change Title for the presentation -->
+    <title>Presentation Title</title>
 
 </head>
 
@@ -11,8 +16,10 @@
 <!-- #ToDo: Write your slides in MarkDown here -->
 <textarea id="source">
 
-background-image: url(../images/codecamp.png)
+class: center, middle
 background-color: #cacaca
+
+![Title](./images/logo_white.png)
 
 ---
 
@@ -24,6 +31,7 @@ class: center, middle
 Your presenter notes
 
 ---
+
 name: YourSlideName
 
 # HowTo: Writing
@@ -36,6 +44,7 @@ To start writing your own slide deck in MarkDown, simply open the HTML file in y
 4. Be inspiring!
 
 ---
+
 name: ForSlideInterLinking
 
 background-color: purple
@@ -51,4 +60,24 @@ background-color: purple
 
 Hint: You can always press 'h' to see an overview of all available key commands.
 
-</textarea><script type="text/javascript" src="../js/remark-latest.min.js"></script></body></html>
+---
+
+name: Customizing
+
+# Note on Customizing
+
+If placing slides in a subdirectory (which is recommended for larger collections of presentations), update the location of JS and CSS files in the template:
+
+```html
+<!-- in the head -->
+<link rel="stylesheet" href="../css/slidestyles.css" type="text/css" media="screen" charset="utf-8">
+
+<!-- before the closing body tag -->
+<script type="text/javascript" src="../js/remark-latest.min.js"></script>
+```
+
+</textarea>
+
+<script type="text/javascript" src="./js/remark-latest.min.js"></script>
+</body>
+</html>
